@@ -1,0 +1,85 @@
+---
+// Supports weights 400-700
+import '@fontsource-variable/pixelify-sans'
+
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Astro description"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width"
+		/>
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/favicon.svg"
+		/>
+		<meta
+			name="generator"
+			content={Astro.generator}
+		/>
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: initial;
+		--accent-light: initial;
+		--accent-dark: initial;
+		--accent-gradient: initial;
+	}
+
+	html {
+		all: initial;
+		font-family: 'Pixelify Sans Variable', system-ui;
+		background: initial;
+	}
+
+	code {
+		all: initial;
+		font-family: initial;
+	}
+
+	h1 {
+		font-size: 2rem;
+		font-weight: 700;
+	}
+
+	p {
+		font-size: 1rem;
+		color: #666;
+	}
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+	a {
+		text-decoration: none;
+		color: blue;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	a,
+	a[download] {
+		text-decoration: none;
+		color: blue;
+	}
+
+	a:hover,
+	a[download]:hover {
+		text-decoration: underline;
+	}
+</style>

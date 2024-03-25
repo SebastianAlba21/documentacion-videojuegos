@@ -1,0 +1,40 @@
+---
+const MIEMBROS = [
+	{
+		name: 'Andrés Garzón',
+		role: '',
+	},
+	{
+		name: 'Juan Aldana',
+		role: '',
+	},
+	{
+		name: 'Nicolás Londoño',
+		role: '',
+	},
+	{
+		name: 'Natalia Hernandez',
+		role: '',
+	},
+	{
+		name: 'Sebastián Alba',
+		role: '',
+	},
+]
+---
+
+<ul>
+	{
+		MIEMBROS.map(({ name, role }) => (
+			<li>
+				<strong>Nombre: </strong> {name}. &nbsp; <strong>Función: </strong> {role}
+			</li>
+		))
+	}
+</ul>
+
+<style>
+	ul {
+		padding: 10px;
+	}
+</style>
