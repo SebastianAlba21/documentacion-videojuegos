@@ -11,7 +11,7 @@ import Layout from '../layouts/Layout.astro'
 			<img
 				src="./img/pong.webp"
 				alt="Pong Game"
-				loading="lazy"
+				loading="eager"
 			/>
 			<p>
 				Bienvenidos a <strong>POG</strong>, un emocionante juego que combina las clásicas mecánicas
@@ -32,10 +32,10 @@ import Layout from '../layouts/Layout.astro'
 	main {
 		display: flex;
 		justify-content: space-evenly;
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-		padding-left: 10rem;
-		padding-right: 10rem;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		padding-left: 7rem;
+		padding-right: 7rem;
 		gap: 2rem;
 		text-align: justify;
 	}
@@ -46,6 +46,7 @@ import Layout from '../layouts/Layout.astro'
 	}
 	img {
 		max-width: 500px;
+		border-radius: 8px;
 		height: auto;
 	}
 	@media screen and (max-width: 1024px) {
