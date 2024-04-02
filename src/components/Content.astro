@@ -1,19 +1,23 @@
+---
+const CONTENT = [
+	{ url: '/docs/GDD_POG_Videojuego.pdf', label: 'Game Design Document.' },
+	{ url: '/content/prototipo-papel', label: 'Primera versión del prototipo en papel.' },
+	{ url: '/content/prototipo-digital', label: 'Primera versión del prototipo en digital.' },
+]
+---
+
 <div>
 	<h1>Contenido.</h1>
 	<ul>
-		<li>
-			<a
-				href="/docs/GDD_POG_Videojuego.pdf"
-				download
-				>Game Design Document.
-			</a>
-		</li>
-		<li>
-			<a href="/content/prototipo-papel">Primera versión del prototipo en papel. </a>
-		</li>
-		<li>
-			<a>Primera versión del prototipo en digital. </a>
-		</li>
+		{
+			CONTENT.map(({ url, label }) => {
+				return (
+					<li>
+						<a href={url}>{label}</a>
+					</li>
+				)
+			})
+		}
 	</ul>
 </div>
 
