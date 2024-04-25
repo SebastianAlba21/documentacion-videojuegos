@@ -7,18 +7,19 @@ import Layout from '../layouts/Layout.astro'
 <Layout title="Documentación de POG.">
 	<main>
 		<div>
-			<h1>Documentación: Juego de POG.</h1>
+			<h1>Documentación: Juego de POG VR.</h1>
 			<img
-				src="./img/pong.webp"
+				src="/docs/field.webp"
 				alt="Pong Game"
 				loading="eager"
 			/>
 			<p>
-				Bienvenidos a <strong>POG</strong>, un emocionante juego que combina las clásicas mecánicas
-				de Pong con un emocionante entorno espacial futurista en 3D. Los jugadores asumen el papel
-				de hábiles pilotos de naves espaciales y se enfrentan en intensos duelos 1 vs 1 dentro de un
-				estadio galáctico especialmente diseñado para esta competición. POG ofrece una experiencia
-				única que cautiva a jugadores de todas las edades.
+				Bienvenidos a <strong>POG VR</strong>, una emocionante experiencia que transporta las
+				clásicas mecánicas de Pong a un entorno espacial futurista en 3D dentro de la realidad
+				virtual. Los jugadores se convierten en hábiles pilotos de naves espaciales y se sumergen en
+				intensos duelos 1 vs 1 dentro de un estadio galáctico especialmente diseñado para esta
+				competición. POG VR ofrece una experiencia única que cautiva a jugadores de todas las edades
+				y los sumerge en un mundo virtualmente real.
 			</p>
 			<Members />
 		</div>
@@ -39,15 +40,19 @@ import Layout from '../layouts/Layout.astro'
 		gap: 2rem;
 		text-align: justify;
 	}
+	p {
+		max-width: 80%;
+	}
 	div {
 		display: flex;
 		max-width: 40%;
 		flex-direction: column;
 	}
 	img {
-		max-width: 500px;
+		max-width: 80%;
 		border-radius: 8px;
 		height: auto;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 	}
 	@media screen and (max-width: 1024px) {
 		main {

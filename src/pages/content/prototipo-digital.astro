@@ -1,0 +1,54 @@
+---
+import Layout from '../../layouts/Layout.astro'
+---
+
+<Layout title="Prototipo en digital.">
+	<div>
+		<h1>Primer prototipo en digital.</h1>
+		<section>
+			<article>
+				<h1>Estadio</h1>
+				<img
+					src="/docs/stadium.webp"
+					alt="Estadio de fútbol"
+				/>
+			</article>
+			<article>
+				<h1>Terreno</h1>
+				<img
+					src="/docs/field.webp"
+					alt="Terreno de juego"
+				/>
+			</article>
+			<article>
+				<h1>Balón</h1>
+				<img
+					src="/docs/ball.webp"
+					alt="Balón"
+				/>
+			</article>
+		</section>
+	</div>
+</Layout>
+
+<style>
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 5rem;
+	}
+	img {
+		width: 100%;
+		max-width: 80%;
+		border-radius: 8px;
+		border-radius: 12px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+	section {
+    margin-top: 3rem;
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+</style>
