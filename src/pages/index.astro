@@ -1,6 +1,5 @@
 ---
 import Members from '../components/Members.astro'
-import Content from '../components/Content.astro'
 import Layout from '../layouts/Layout.astro'
 ---
 
@@ -23,16 +22,14 @@ import Layout from '../layouts/Layout.astro'
 			</p>
 			<Members />
 		</div>
-		<div>
-			<Content />
-		</div>
 	</main>
 </Layout>
 
 <style>
 	main {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: center;
+		align-items: center;
 		padding-top: 3rem;
 		padding-bottom: 3rem;
 		padding-left: 7rem;
@@ -41,15 +38,18 @@ import Layout from '../layouts/Layout.astro'
 		text-align: justify;
 	}
 	p {
-		max-width: 80%;
+		font-size: 1.2rem;
+		max-width: 50%;
 	}
 	div {
 		display: flex;
-		max-width: 40%;
 		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+		width: 100%;
 	}
 	img {
-		max-width: 80%;
+		max-width: 50%;
 		border-radius: 8px;
 		height: auto;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
