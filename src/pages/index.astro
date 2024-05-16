@@ -1,5 +1,6 @@
 ---
 import Members from '../components/Members.astro'
+import Welcome from '../components/Welcome.astro'
 import Unity from '../components/Unity.astro'
 import Metaquest from '../components/Metaquest.astro'
 import Layout from '../layouts/Layout.astro'
@@ -8,22 +9,9 @@ import Layout from '../layouts/Layout.astro'
 <Layout title="Documentación de POG.">
 	<main>
 		<div>
-			<h1>Documentación: Juego de POG VR.</h1>
-			<img
-				src="/docs/field.webp"
-				alt="Pong Game"
-				loading="eager"
-			/>
-			<p>
-				Bienvenidos a <strong>POG VR</strong>, una emocionante experiencia que transporta las
-				clásicas mecánicas de Pong a un entorno espacial futurista en 3D dentro de la realidad
-				virtual. Los jugadores se convierten en hábiles pilotos de naves espaciales y se sumergen en
-				intensos duelos 1 vs 1 dentro de un estadio galáctico especialmente diseñado para esta
-				competición. POG VR ofrece una experiencia única que cautiva a jugadores de todas las edades
-				y los sumerge en un mundo virtualmente real.
-			</p>
-			<Unity/>
-			<Metaquest/>
+			<Welcome />
+			<Unity />
+			<Metaquest />
 			<Members />
 		</div>
 	</main>
@@ -43,14 +31,13 @@ import Layout from '../layouts/Layout.astro'
 	}
 	p {
 		font-size: 1.2rem;
-		max-width: 50%;
 	}
 	div {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		gap: 2rem;
-		width: 100%;
+		width: 70%;
 	}
 	img {
 		max-width: 50%;
